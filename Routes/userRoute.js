@@ -31,8 +31,12 @@ router.get('/about-lawyer', (req, res) => {
     res.render('aboutLawyer')
 });
 
+router.get('/ai', (req, res) => {
+    res.render('ai')
+});
+
 router.get('/google/success', (req, res) => {
-    res.render("home");
+    res.render("ai");
 })
 
 
@@ -43,7 +47,8 @@ router.get( '/google/callback',
     passport.authenticate( 'google', {
         successRedirect: '/google/success',
         failureRedirect: '/google/failure'
-}));
+    })
+);
 router.post('/login', userLogin)
 router.post('/onboarding', verify)
 

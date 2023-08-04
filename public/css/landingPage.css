@@ -43,34 +43,81 @@ nav {
 
 /* header  */
 
-header {
-	background-color: var(--blue);
+body > header > nav > div > button.btn.btn-light.px-3.py-1 > a {
+	color: var(--blue);
+}
+
+body > header {
+	background-image: url("/img/landingPage\ img/image0\ \(8\)\ 1.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 body > header > section > div > h1 > span {
 	color: var(--gold);
 }
 
-body > header > section > div > div > button {
+body > header > section > div > div > button,
+body
+	> header
+	> section
+	> div
+	> div:nth-child(1)
+	> div.border-top.col-5.border-white.d-flex.justify-content-center.border-2.mt-5
+	> button,
+body
+	> main
+	> section:nth-child(2)
+	> div
+	> div.container.align-items-center.ps-5.pe-5
+	> div
+	> div.d-flex.align-items-center.justify-content-center
+	> button,
+body > header > div {
 	background-color: var(--gold) !important;
 }
 
-body > main > section:nth-child(3) {
+body > main > section:nth-child(2) {
 	padding-inline: 0;
 	padding-block: 0;
 	background-color: var(--blue);
 }
 
-body > main > section.bg-dark\.bg-gradient,
 body > footer > section,
-body > footer > section.pb-3 {
+body > main > section:nth-child(2),
+body > main > section:nth-child(4) {
 	background-color: var(--blue);
 }
-body > main > section.z-n1 {
+
+body > main > section.z-n1,
+body
+	> main
+	> section.z-n1
+	> div.d-flex.gap-5.justify-content-between.pt-5
+	> div
+	> div {
 	background-color: var(--grey);
 }
 
-body > footer > section > div.d-flex.justify-content-center > p {
+body
+	> main
+	> section:nth-child(3)
+	> div
+	> div.d-flex.gap-3.py-5.align-items-center.justify-content-between,
+body
+	> main
+	> section:nth-child(3)
+	> div
+	> div.d-flex.gap-3.py-5.align-items-center.justify-content-between
+	> div
+	> div,
+body > main > section:nth-child(3) > div {
+	background-color: var(--grey);
+}
+
+body > footer > section > div.d-flex.justify-content-center > p,
+body > header > section > div > div:nth-child(1) > div.row > h1 > span {
 	color: var(--gold);
 }
 

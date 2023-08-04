@@ -12,33 +12,62 @@
 		<title>Landing Page</title>
 		<link rel="stylesheet" href="/css/landingPage.css" />
 	</head>
-	<body>
+	<body class="position-relative">
 		<header class="vh-100">
 			<nav class="d-flex justify-content-between align-items-center">
-				<h1 class="fs-5 d-flex align-items-center gap-3">
-					<img
-						class="w-25"
-						src="/img/landingPage img/favicon-northman (2).png"
-						alt="logo"
-					/>
-					Legal Buddy
-				</h1>
+				<div>
+					<img src="./img/landingPage img/png logo 2 1.png" alt="logo" />
+				</div>
 
 				<ul
 					class="nav-list d-flex align-items-center gap-5 justify-content-center mb-0"
 				>
 					<li><a href="./home">Home</a></li>
 					<li><a href="./about">About</a></li>
-					<li><a href="#">Services</a></li>
+					<li class="dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
+							Services
+						</a>
+						<ul class="text-dark dropdown-menu">
+							<li>
+								<a
+									class="dropdown-item text-dark"
+									href="./ai"
+									>AI CHATBOX</a
+								>
+							</li>
+							<li>
+								<a class="text-dark dropdown-item" href="#"
+									>AFFORDABLE AND SUBSIDIED FEES</a
+								>
+							</li>
+							<li>
+								<a class="dropdown-item text-dark" href="#"
+									>BEST IN-CLASS LAWYERS</a
+								>
+							</li>
+						</ul>
+					</li>
 					<li><a href="#">Contact Us</a></li>
 				</ul>
 				<div class="nav-btn">
-					<!-- <button class="btn text-white me-4">Login</button> -->
 					<button class="btn text-white me-4">
-						<a  href="./login">Login</a>
+						<a
+							href="./login"
+							class="text-decoration-none text-white"
+							>Login</a
+						>
 					</button>
 					<button class="btn btn-light px-3 py-1">
-						<a  href="./signup">Sign Up</a>
+						<a href="./signup" class="text-decoration-none"
+							>Sign Up</a
+						>
 					</button>
 				</div>
 			</nav>
@@ -46,9 +75,9 @@
 				<div class="d-flex pt-4">
 					<div>
 						<div class="row">
-							<h1 class="text-white col-5 pe-3">
+							<h1 class="text-white col-5">
 								We Offer The Best In-Class Lawyers For All Your
-								<span>Legal Issues </span>
+								<span>Legal Matters </span>
 							</h1>
 						</div>
 						<div
@@ -57,49 +86,28 @@
 							<button
 								class="btn btn-lg text-white fs-4 px-5 border-1 mt-5 text-uppercase"
 							>
-								more
+								<a
+									href="./lawyers/index.html"
+									class="text-decoration-none text-white"
+									>get started</a
+								>
 							</button>
 						</div>
 					</div>
-					<div class="text-white w-25">
-						<p>
-							Empowering Justice by Bridging the Gap Between Lawyers and Clients
-							for Expert Legal Solutions and Personalized Advocacy
-						</p>
-					</div>
 				</div>
 			</section>
-			<div class="position-relative position-absolute top-75 start-50">
-				<img class="w-75 z-3" src="./img/landingPage img/Frame 272.png" alt="" />
+			<div
+				class="position-fixed bottom-0 end-0 z-3 text-white rounded-circle p-3"
+			>
+				<a
+					href="./AI chatbot/index.html"
+					class="text-decoration-none text-white fs-4"
+					><img src="./img/landingPage img/ion_chatbox-ellipses-outline.png" alt="chat-icon"
+				/></a>
 			</div>
 		</header>
 		<main>
-			<section class="pt-5 mt-5">
-				<div class="pt-5 mt-5 text-center pb-5">
-					<h3 class="pt-5">Our Partnership</h3>
-				</div>
-				<div
-					class="d-flex align-items-center justify-content-around text-center"
-				>
-					<div class="border-end border-2 border-dark py-5 pe-5">
-						<img class="w-50 h-50" src="./img/landingPage img/g28.png" alt="" />
-						<p>Daerazo</p>
-					</div>
-					<div class="border-end border-2 border-dark py-5 pe-5">
-						<img class="w-50 h-50" src="./img/landingPage img/Group 2.png" alt="" />
-						<p>Daerazo</p>
-					</div>
-					<div class="border-end border-2 border-dark py-5 pe-5">
-						<img class="w-50 h-50" src="./img/landingPage img/g76.png" alt="" />
-						<p>Daerazo</p>
-					</div>
-					<div>
-						<img class="w-50 h-50" src="./img/landingPage img/Group 3.png" alt="" />
-						<p>Daerazo</p>
-					</div>
-				</div>
-			</section>
-			<section>
+			<section class="px-5">
 				<div class="w-75 pb-5">
 					<h2 class="w-75 pe-5 me-5">
 						No matter what life throws at you, Legal Buddy has you covered
@@ -158,10 +166,10 @@
 				</div>
 			</section>
 			<section>
-				<div class="d-flex mt-5 text-white">
-					<div class="container align-items-center pt-5 ps-5 border-top pe-5">
-						<div class="pt-5">
-							<h3>How does this work?</h3>
+				<div class="d-flex pt-0 pe-0 text-white">
+					<div class="container align-items-center ps-5 pe-5">
+						<div>
+							<h3 class="pt-5">How does this work?</h3>
 							<p>
 								Instead of the hassle of dealing with the legal system on your
 								own, we will do all the heavy-lifting involved with finding and
@@ -201,6 +209,17 @@
 									</p>
 								</div>
 							</div>
+							<div class="d-flex align-items-center justify-content-center">
+								<button
+									class="btn btn-lg text-white fs-4 px-5 border-1 mt-5 text-uppercase"
+								>
+									<a
+										href="./lawyers/index.html"
+										class="text-decoration-none text-white"
+										>get started</a
+									>
+								</button>
+							</div>
 						</div>
 					</div>
 					<div>
@@ -208,7 +227,63 @@
 					</div>
 				</div>
 			</section>
-			<section class="bg-dark.bg-gradient">
+			<section class="px-0 py-0">
+				<div class="pt-5">
+					<div class="text-center">
+						<p>Lawyer</p>
+						<h3>Professional lawyers and advisors with more experience</h3>
+					</div>
+					<div
+						class="d-flex gap-3 py-5 px-5 align-items-center justify-content-between"
+					>
+						<div class="card border-0 rounded-0" style="width: 18rem">
+							<img
+								src="./img/landingPage img/Mask group (12).png"
+								class="card-img-top rounded-0"
+								alt="..."
+							/>
+							<div class="card-body text-center">
+								<p class="card-title">Laitman Harry</p>
+								<p class="card-text">Senior Business Lawyer</p>
+							</div>
+						</div>
+						<div class="card border-0 rounded-0" style="width: 18rem">
+							<img
+								src="./img/landingPage img/unsplash_fPu5oBGpphY.png"
+								class="card-img-top rounded-0"
+								alt="..."
+							/>
+							<div class="card-body text-center">
+								<p class="card-title">Nada Geomorgant</p>
+								<p class="card-text">Senior Business Lawyer</p>
+							</div>
+						</div>
+						<div class="card border-0 rounded-0" style="width: 18rem">
+							<img
+								src="./img/landingPage img/Mask group (13).png"
+								class="card-img-top rounded-0"
+								alt="..."
+							/>
+							<div class="card-body text-center">
+								<p class="card-title">Desy Willy</p>
+								<p class="card-text">Senior Business Lawyer.</p>
+							</div>
+						</div>
+						<div class="card border-0 rounded-0" style="width: 18rem">
+							<img
+								src="./img/landingPage img/Mask group (14).png"
+								class="card-img-top rounded-0"
+								alt="..."
+							/>
+							<div class="card-body text-center">
+								<p class="card-title">Desy Willy</p>
+								<p class="card-text">Senior Business Lawyer.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
 				<div class="w-75 m-auto text-white">
 					<div class="text-center">
 						<h1>
@@ -254,30 +329,121 @@
 						/>
 						<div class="position-absolute top-50 end-50">
 							<p>Testimonials</p>
-							<h5 class="display-5 pe-5">Our Happy Client Say About Us</h5>
+							<h5 class="display-4 pe-5">What Our Clients Say About Us</h5>
 						</div>
 					</div>
 				</div>
 				<div class="d-flex gap-5 justify-content-between pt-5">
-					<div class="w-25"></div>
-					<div class="position-relative w-75">
-						<img class="z-n1" src="./img/landingPage img/“.png" alt="" />
-						<div class="position-absolute pt-5 ps-5 top-0 w-">
-							<p>
-								I am a 32 years old woman, married with two kids. I have been in
-								an abusive marriage for the pass 5 years. It all started when my
-								husband lost his Job. He became aggressive and took out his
-								frustration on me and the kid. A friend introduced me to Legal
-								Buddy where I got both legal help and counseling, I’m safe and
-								happy now.
-							</p>
-							<div class="d-flex gap-3 align-items-center">
-								<div>
-									<img src="./img/landingPage img/Frame 294.png" alt="" />
+					<div class="carousel slide row gap-4">
+						<div class="card carousel-inner rounded-0 py-0 px-3 col p-0">
+							<div class="carousel-item active card-body py-0">
+								<div class="pt-4 pb-5">
+									<img
+										class="rounded-0"
+										src="./img/landingPage img/image 9.png"
+										class=""
+										alt="..."
+									/>
 								</div>
-								<p class="mb-0">Yemi King</p>
+								<p class="card-text">
+									Whether it’s damage to your home, vehicle or property, we will
+									help settle insurance claims for peace of mind.
+								</p>
+								<div class="d-flex align-items-center py-4 gap-3">
+									<div>
+										<img src="./img/landingPage img/image 10.png" alt="" />
+									</div>
+									<div>
+										<h6>Request a legal service</h6>
+										<p class="fs-6">
+											Submit a form with the details of your predicament
+										</p>
+									</div>
+								</div>
 							</div>
 						</div>
+						<div class="card rounded-0 py-0 px-3 col p-0">
+							<div class="card-body py-0">
+								<div class="pt-4 pb-5">
+									<img
+										class="rounded-0"
+										src="./img/landingPage img/image 9.png"
+										class=""
+										alt="..."
+									/>
+								</div>
+								<p class="card-text">
+									Whether it’s damage to your home, vehicle or property, we will
+									help settle insurance claims for peace of mind.
+								</p>
+								<div class="d-flex align-items-center py-4 gap-3">
+									<div>
+										<img src="./img/landingPage img/image 10 (1).png" alt="" />
+									</div>
+									<div>
+										<h6>Request a legal service</h6>
+										<p class="fs-6">
+											Submit a form with the details of your predicament
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card rounded-0 py-0 px-3 col p-0">
+							<div class="card-body py-0">
+								<div class="pt-4 pb-5">
+									<img
+										class="rounded-0"
+										src="./img/landingPage img/image 9.png"
+										class=""
+										alt="..."
+									/>
+								</div>
+								<p class="card-text">
+									Whether it’s damage to your home, vehicle or property, we will
+									help settle insurance claims for peace of mind.
+								</p>
+								<div class="d-flex align-items-center py-4 gap-3">
+									<div>
+										<img src="./img/landingPage img/image 10 (2).png" alt="" />
+									</div>
+									<div>
+										<h6>Request a legal service</h6>
+										<p class="fs-6">
+											Submit a form with the details of your predicament
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="col-1 d-flex align-items-center justify-content-center">
+							<img src="./images/Group 42.png" alt="arrow" />
+						</div> -->
+
+						<button
+							class="carousel-control-prev"
+							type="button"
+							data-bs-target="#carouselExample"
+							data-bs-slide="prev"
+						>
+							<span
+								class="carousel-control-prev-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button
+							class="carousel-control-next"
+							type="button"
+							data-bs-target="#carouselExample"
+							data-bs-slide="next"
+						>
+							<span
+								class="carousel-control-next-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Next</span>
+						</button>
 					</div>
 				</div>
 				<div class="pt-5 text-center">
@@ -313,8 +479,34 @@
 								<label for="floatingPassword">Email address</label>
 							</div>
 						</div>
-						<div class="m-auto">
+						<div class="">
 							<button class="btn btn-primary px-5 mt-3 py-2">Subscribe</button>
+						</div>
+
+						<div>
+							<div class="d-flex gap-3 pt-4">
+								<p>Terms & Conditions •</p>
+								<p>Privacy Policy</p>
+							</div>
+							<div
+								class="d-flex gap-4 align-items-center justify-content-center pt-3"
+							>
+								<img
+									style="width: 2rem; height: 2rem"
+									src="./img/landingPage img/Frame 28.png"
+									alt=""
+								/>
+								<img
+									style="width: 2rem; height: 2rem"
+									src="./img/landingPage img/Frame 30 (1).png"
+									alt=""
+								/>
+								<img
+									style="width: 2rem; height: 2rem"
+									src="./img/landingPage img/Frame 26 (1).png"
+									alt=""
+								/>
+							</div>
 						</div>
 					</div>
 					<div class="w-50">
@@ -358,7 +550,7 @@
 										alt="phone-icon"
 									/>Call us
 								</h6>
-								<p class="mb-0 mt-2">+233-24-123-4567</p>
+								<p class="mb-0 mt-2">+23414759872</p>
 								<p>Mon-Fri 8AM-5PM</p>
 							</div>
 							<div>

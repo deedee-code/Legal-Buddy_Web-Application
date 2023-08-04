@@ -43,7 +43,69 @@ header {
 }
 
 body > main > section:nth-child(4) > div > button {
-	background-color: var(--gold);
+	background-color: var(--gold);:root {
+		--blue: #1c2953;
+		--white: #ffffff;
+		--gold: #ceb863;
+		--grey: #e8e9e1;
+	}
+	
+	* {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	
+	section {
+		padding: 3rem 5%;
+		width: 100vw;
+	}
+	
+	body {
+		overflow-x: hidden;
+	}
+	
+	/* navigation  */
+	nav {
+		color: var(--white);
+		padding: 1rem 5%;
+	}
+	
+	.nav-list {
+		list-style: none;
+	}
+	
+	.nav-list a {
+		text-decoration: none;
+		color: var(--white);
+	}
+	
+	header {
+		background-image: url("./images/Rectangle\ 8.png");
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	
+	body > main > section:nth-child(4) > div > button {
+		background-color: var(--gold);
+	}
+	
+	body > main > section:nth-child(4),
+	footer {
+		background-color: var(--blue);
+	}
+	
+	body > main > section:nth-child(1),
+	body > main > section.py-5,
+	body > main > section:nth-child(3),
+	body > main > section:nth-child(5),
+	body > main > section:nth-child(5) > div > div:nth-child(1) > div,
+	body > main > section:nth-child(5) > div > div:nth-child(2) > div,
+	body > main > section:nth-child(6),
+	body > main > section:nth-child(7) {
+		background-color: var(--grey);
+	}	
 }
 
 body > main > section:nth-child(4),
