@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="/css/login.css" />
+		<title>Login</title>
+	</head>
+	<body>
+		<main
+			class="py-5 d-flex align-items-center flex-column justify-content-center"
+		>
+			<div class="m-auto w-50 py-3 bg-white py-3 px-5">
+				<div class="text-center">
+					<img
+						class="mb-4"
+						src="./img/login img/final logo africa aility 1 (1).png"
+						alt="logo"
+					/>
+					<h2 class="py-3">Login</h2>
+				</div>
+				<div class="pb-3">
+					<form action="/login" method="post">
+						<div class="form-floating mb-3">
+							<input
+								type="email"
+								class="form-control"
+								id="floatingInput"
+								placeholder="name@example.com"
+							/>
+							<label for="floatingPassword">Email Address</label>
+						</div>
+						<div class="form-floating mb-3">
+							<input
+								type="password"
+								class="form-control"
+								id="floatingPassword"
+								placeholder="password"
+							/>
+							<label for="floatingInput">Password </label>
+							<button class="btn btn-primary px-5 py-2">LOGIN</button>
+						</div>
+					</form>
+					<form action="/google" method="get" class="d-flex flex-column align-items-center gap-3">
+						<button class="btn px-5 py-2 text-black">
+							<img
+								class="me-2"
+								src="./img/login img/search (4) 2.png"
+								alt=" google-icon"
+							/>LOGIN WITH GOOGLE
+						</button>
+					</form>
+				</div>
+				<div class="d-flex flex-column align-items-center gap-3">
+					<!-- <button class="btn btn-primary px-5 py-2">LOGIN</button> -->
+					
+					<p>
+						Don't have an account?
+						<a href="../signup">Sign Up</a>
+					</p>
+				</div>
+			</div>
+			<section class="py-0 w-50 pe-0 pt-2">
+				<div class="text-end d-flex justify-content-end">
+					<p class="me-3">Help</p>
+					<p class="me-3">Terms</p>
+					<p class="me-3">Privacy</p>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<section>
+				<div class="d-flex gap-3 text-white">
+					<div class="d-flex w-50 flex-column border-end pe-5">
+						<h1>Stay Up To DateWith The Latest Legal News</h1>
+						<div>
+							<div class="form-floating mb-3 text-dark">
+								<input
+									type="email"
+									class="form-control"
+									id="floatingInput"
+									placeholder="Name"
+								/>
+								<label for="floatingInput">Name</label>
+							</div>
+							<div class="form-floating text-dark">
+								<input
+									type="password"
+									class="form-control"
+									id="floatingPassword"
+									placeholder="Email address"
+								/>
+								<label for="floatingPassword">Email address</label>
+							</div>
+						</div>
+						<div class="m-auto">
+							<button class="btn btn-primary px-5 mt-3 py-2">Subscribe</button>
+						</div>
+					</div>
+					<div class="w-50">
+						<div class="d-flex justify-content-around pb-5">
+							<div>
+								<h5>Company</h5>
+								<ul>
+									<li>About Us</li>
+									<li>Teams</li>
+									<li>Affiliates</li>
+									<li>Media</li>
+									<li>Contacts</li>
+									<li>Careers</li>
+								</ul>
+							</div>
+							<div>
+								<h5>Community</h5>
+								<ul>
+									<li>Blog</li>
+									<li>Community</li>
+									<li>Partners</li>
+									<li>Ideas</li>
+								</ul>
+							</div>
+							<div>
+								<h5>Links</h5>
+								<ul>
+									<li>Terms</li>
+									<li>About</li>
+									<li>Privacy</li>
+									<li>Help</li>
+								</ul>
+							</div>
+						</div>
+						<div class="d-flex justify-content-around">
+							<div>
+								<h6>
+									<img
+										class="me-2"
+										src="./img/login img/image 12.png"
+										alt="phone-icon"
+									/>Call us
+								</h6>
+								<p class="mb-0 mt-2">+233-24-123-4567</p>
+								<p>Mon-Fri 8AM-5PM</p>
+							</div>
+							<div>
+								<h6>
+									<img
+										class="me-2"
+										src="./img/login img/image 12 (1).png"
+										alt="phone-icon"
+									/>Send an email
+								</h6>
+								<p class="mb-0 mt-2">
+									<a href="#" class="text-white text-decoration-none"
+										>info@legalbuddy.com</a
+									>
+								</p>
+								<p>We usually reply in 48 hours</p>
+							</div>
+							<div>
+								<p>Follow Us</p>
+								<img src="./img/login img/Group 2035.png" alt="facebook-icon" />
+								<img src="./img/login img/Group 2036.png" alt="twitter-icon" />
+								<img src="./img/login img/Group 2037.png" alt="instagram-icon" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="d-flex justify-content-center">
+					<p class="pt-4">Legal Buddy 2023&reg;, All Rights Reserved</p>
+				</div>
+			</section>
+		</footer>
+	</body>
+</html>

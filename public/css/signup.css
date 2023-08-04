@@ -1,0 +1,68 @@
+:root {
+	--blue: #1c2953;
+	--white: #ffffff;
+	--gold: #ceb863;
+	--grey: #e8e9e1;
+	--bodyColor: #f6f2dc;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+section {
+	padding: 3rem 5%;
+	width: 100vw;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+body > main {
+	background-color: var(--bodyColor);
+}
+
+body > footer,
+body > main > div > div:nth-child(1) > div > div,
+body
+	> main
+	> div
+	> div.d-flex.flex-column.align-items-center
+	> button.btn.px-5.py-2 {
+	background-color: var(--blue);
+}
+
+body > main > div > div:nth-child(1) > div > div:nth-child(2) {
+	background-color: var(--grey);
+}
+
+body
+	> main
+	> div
+	> div:nth-child(1)
+	> div
+	> div:nth-child(2)
+	> div
+	> p.mb-1.fs-4 {
+	color: var(--blue) !important;
+}
+
+body > header > nav > div > button.btn.btn-light.px-3.py-1 > a {
+	text-decoration: none;
+	color: var(--white);
+}
+
+body
+	> footer
+	> section
+	> div.d-flex.gap-3.text-white
+	> div.d-flex.w-50.flex-column.border-end.pe-5,
+body > footer > section > div.d-flex.justify-content-center > p {
+	border-color: var(--gold) !important;
+}
+body > footer > section > div.d-flex.justify-content-center > p {
+	color: var(--gold);
+}

@@ -1,0 +1,83 @@
+:root {
+	--blue: #1c2953;
+	--white: #ffffff;
+	--gold: #ceb863;
+	--grey: #e8e9e1;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+section {
+	padding: 3rem 5%;
+	width: 100vw;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+/* navigation  */
+nav {
+	background-color: var(--blue);
+	color: var(--white);
+	padding: 1rem 5%;
+}
+
+.nav-list {
+	list-style: none;
+}
+
+.nav-list a {
+	text-decoration: none;
+	color: var(--white);
+}
+
+.nav-btn {
+	background-color: var(--blue) !important;
+	color: var(--white) !important;
+}
+
+/* header  */
+
+header {
+	background-color: var(--blue);
+}
+
+body > header > section > div > h1 > span {
+	color: var(--gold);
+}
+
+body > header > section > div > div > button {
+	background-color: var(--gold) !important;
+}
+
+body > main > section:nth-child(3) {
+	padding-inline: 0;
+	padding-block: 0;
+	background-color: var(--blue);
+}
+
+body > main > section.bg-dark\.bg-gradient,
+body > footer > section,
+body > footer > section.pb-3 {
+	background-color: var(--blue);
+}
+body > main > section.z-n1 {
+	background-color: var(--grey);
+}
+
+body > footer > section > div.d-flex.justify-content-center > p {
+	color: var(--gold);
+}
+
+body
+	> footer
+	> section
+	> div.d-flex.gap-3.text-white
+	> div.d-flex.w-50.flex-column.border-end.pe-5 {
+	border-color: var(--gold) !important;
+}

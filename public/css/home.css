@@ -1,0 +1,101 @@
+:root {
+	--black: #000000;
+	--white: #ffffff;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+section {
+	padding: 3rem 5%;
+	width: 100vw;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+/* navigation  */
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--black);
+	color: var(--white);
+	padding: 1rem 5%;
+}
+
+.nav-list {
+	display: flex;
+	align-items: center;
+	gap: 0.9rem;
+	list-style: none;
+}
+
+.nav-list a {
+	text-decoration: none;
+	color: var(--white);
+}
+
+.nav-list li:nth-child(4) > button {
+	border: 1px solid var(--white);
+	text-transform: capitalize;
+	padding: 0.3rem 1.2rem;
+	border-radius: 0.2rem;
+	background-color: transparent;
+	color: var(--white);
+}
+
+/* header  */
+header {
+	color: var(--white);
+	background-color: var(--black);
+	height: 100vh;
+}
+
+.hero {
+	padding-right: 0;
+}
+
+.hero-img {
+	background-image: url("/img/home\ img/wesley-tingey-RnfF8SXkzRw-unsplash\ 1\ \(1\).png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 32rem;
+	width: 50%;
+	z-index: -100;
+	float: right;
+}
+
+body > main > section:nth-child(1) {
+	background-color: #f3f3f3;
+}
+
+.img-div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.3rem;
+}
+
+/* body > header > section > div > button {
+	padding-inline: 1.5rem !important;
+} */
+
+body > main > section.d-flex {
+	padding-right: 0;
+}
+
+body > main > section:nth-child(4) {
+	background-color: var(--black);
+}
+
+body > main > section:nth-child(3) {
+	padding-inline: 0;
+	padding-bottom: 0;
+}
