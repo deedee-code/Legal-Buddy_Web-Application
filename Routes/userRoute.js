@@ -27,7 +27,7 @@ router.get('/home', (req, res) => {
     res.render('home')
 });
 
-router.get('/about-lawyer', (req, res) => {
+router.get('/aboutLawyer', (req, res) => {
     res.render('aboutLawyer')
 });
 
