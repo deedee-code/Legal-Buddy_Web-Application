@@ -1,7 +1,7 @@
 {
   "name": "legal-buddy",
   "version": "1.0.0",
-  "description": "",
+  "description": "A website application that enable individuals have easy access to Lawyers through the use of AI",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

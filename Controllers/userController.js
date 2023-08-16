@@ -67,7 +67,7 @@ const userSignup = async (req, res, next) => {
             from: 'authentication515@gmail.com',
             to: email,
             subject: "Account Activated",
-            html: "<p>You have Successfully Register your Account with Legal Buddy, proceed to Login.</p>"
+            html: "<p>You have successfully register your account with Legal Buddy, proceed to Login.</p>"
         }
     
         transporter.sendMail(mailOptions, (error, info) => {

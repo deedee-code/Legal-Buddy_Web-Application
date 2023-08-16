@@ -40,7 +40,7 @@ function processUserMessage(message) {
 		// Simulate processing and presenting lawyer list...
 		setTimeout(() => {
 			addMessage(
-				`AI Chatbot: Here are some lawyers in your location who specialize in rental property lease agreements:  
+				`AI Chatbot: Here are some lawyers in your location who specialize in legal matters as regards the matter you request for:  
 				Yaseerah Umar,
 				Joseph Daniel,
 				Abdulaziz Bello Pyawu,
