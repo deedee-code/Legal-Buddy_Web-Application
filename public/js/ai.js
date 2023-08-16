@@ -27,7 +27,7 @@ function processUserMessage(message) {
 		message.toLowerCase().includes("divorce")
 	) {
 		addMessage(
-			"AI Chatbot: How can I assist you today? Are you looking for a lawyer to draft agreements or handle a legal matter?"
+			"AI Chatbot: How can I assist you today? Are you looking for a lawyer to 'draft agreements' or handle a 'legal matter'?"
 		);
 	} else if (message.toLowerCase().includes("draft agreement")) {
 		addMessage(
@@ -44,8 +44,8 @@ function processUserMessage(message) {
 				Yaseerah Umar,
 				Joseph Daniel,
 				Abdulaziz Bello Pyawu,
-Ayomide Micheal,
-Alex Iwobi
+				Ayomide Micheal,
+				Alex Iwobi
 				You can review their profiles and choose the one that suits you best. If you have any questions or need further assistance, feel free to ask.`
 			);
 		}, 2000);
@@ -58,10 +58,10 @@ Alex Iwobi
 			addMessage(
 				`AI Chatbot: Here are some lawyers who specialize in pro bono cases related to workplace abuse:
 				Yaseerah Umar,
-Joseph Daniel,
-Abdulaziz Bello Pyawu,
-Ayomide Micheal,
-Alex Iwobi,
+				Joseph Daniel,
+				Abdulaziz Bello Pyawu,
+				Ayomide Micheal,
+				Alex Iwobi,
 				They can assist you further. Take your time to review their profiles, and if you have any questions, feel free to ask.`
 			);
 		}, 2000);

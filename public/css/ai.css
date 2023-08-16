@@ -1,0 +1,51 @@
+:root {
+	--blue: #1c2953;
+	--white: #ffffff;
+	--gold: #ceb863;
+	--grey: #e8e9e1;
+}
+
+* {
+	padding: 3px;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+    background-color: var(--blue);
+	color: var(--white);
+    background-image: url("/img/ai\ img/Rectangle\ 8.png");
+    background-position: center;
+	background-size: auto;
+	background-repeat: no-repeat;
+}
+
+.image {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.message {
+    font-size: 20px;
+}
+
+#userInput {
+    height: 50px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+button {
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: var(--gold);
+    color: var(--white);
+    border: none;
+}

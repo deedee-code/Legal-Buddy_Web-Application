@@ -44,9 +44,9 @@ const userSignup = async (req, res, next) => {
     // const saltRounds = 10;
     // const hashedPassword = bcrypt.hashSync(password, saltRounds);
 
-    if (password !== confirmPassword) {
-        res.status(400).json({ message: "Password and confirm password do not match!" })
-    }
+    // if (password !== confirmPassword) {
+    //     res.status(400).json({ message: "Password and confirm password do not match!" })
+    // }
 
     const newUser = new User ({
         fullName,
@@ -67,7 +67,7 @@ const userSignup = async (req, res, next) => {
             from: 'authentication515@gmail.com',
             to: email,
             subject: "Account Activated",
-            html: "<p>You have Successfully Register your Account</b>.</p>"
+            html: "<p>You have Successfully Register your Account with Legal Buddy, proceed to Login.</p>"
         }
     
         transporter.sendMail(mailOptions, (error, info) => {
@@ -118,7 +118,7 @@ const userLogin = async (req, res, next) => {
     });
 
     // return res.status(200).json({message: 'Successfully logged in', user:existingUser, token });
-    res.redirect('/home');
+    res.redirect('/ai');
 }
 
 

@@ -20,21 +20,22 @@
 				<div class="text-center">
 					<img
 						class="mb-4"
-						src="./img/login img/final logo africa aility 1 (1).png"
+						src="./img/login img/png logo 2 1.png"
 						alt="logo"
 					/>
 					<h2 class="py-3">Login</h2>
 				</div>
 				<div class="pb-3">
-					<form action="/login" method="post">
+					<form action="/login" method="POST">
 						<div class="form-floating mb-3">
 							<input
 								type="email"
 								class="form-control"
 								id="floatingInput"
 								placeholder="name@example.com"
+								name="email"
 							/>
-							<label for="floatingPassword">Email Address</label>
+							<label for="floatingInput">Email Address</label>
 						</div>
 						<div class="form-floating mb-3">
 							<input
@@ -42,24 +43,27 @@
 								class="form-control"
 								id="floatingPassword"
 								placeholder="password"
+								name="password"
 							/>
-							<label for="floatingInput">Password </label>
-							<button class="btn btn-primary px-5 py-2">LOGIN</button>
+							<label for="floatingPassword">Password </label>
+							<button class="login text-white">LOGIN</button>
 						</div>
 					</form>
-					<form action="/google" method="get" class="d-flex flex-column align-items-center gap-3">
-						<button class="btn px-5 py-2 text-black">
-							<img
-								class="me-2"
-								src="./img/login img/search (4) 2.png"
-								alt=" google-icon"
-							/>LOGIN WITH GOOGLE
-						</button>
+
+					<form action="/google" method="GET">
+						<div class="google text-center">
+							<button class="btn px-5 py-2 text-white">
+								<img
+									class="me-2"
+									src="./img/login img/search (4) 2.png"
+									alt=" google-icon"
+								/>LOGIN WITH GOOGLE
+							</button>
+						</div>
 					</form>
 				</div>
+
 				<div class="d-flex flex-column align-items-center gap-3">
-					<!-- <button class="btn btn-primary px-5 py-2">LOGIN</button> -->
-					
 					<p>
 						Don't have an account?
 						<a href="../signup">Sign Up</a>

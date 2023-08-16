@@ -66,3 +66,18 @@ body > footer > section > div.d-flex.justify-content-center > p {
 body > footer > section > div.d-flex.justify-content-center > p {
 	color: var(--gold);
 }
+
+form .login {
+	margin: 20px 200px;
+	width: 200px;
+	height: 50px;
+	background-color: var(--blue);
+	border-radius: 10px;
+}
+
+form .google {
+	background-color: var(--blue);
+	width: 350px;
+	border-radius: 10px;
+	margin: 20px 150px 10px;
+}
